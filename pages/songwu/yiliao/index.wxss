@@ -1,0 +1,19 @@
+/* pages/songwu/yiliao/index.wxss */
+.buttype{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 10px;
+  height: 40px;
+  align-items: center;
+}
+.imgtype{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.texttype{
+  display: flex;
+}

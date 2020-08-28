@@ -1,0 +1,32 @@
+<!--pages/tv/tv.wxml-->
+<view class="container">
+	<view class="background">
+		<view class="shang" bindtap="onShangButton">
+		</view>
+		<view class="zhong">
+			<text class="zuo" bindtap="onZuoButton"></text>
+			<text class="ok" bindtap="onZhongButton">ok</text>
+			<text class="you" bindtap="onYouButton"></text>
+		</view>
+		<view class="xia" bindtap="onXiaButton"></view>
+	</view>
+</view>
+<view class="button">
+	<button bindtap="onVolumeDown" class="volume volumeDown"><image style="width:70rpx;height:70rpx;" src="http://qehhe97e4.bkt.clouddn.com/%E9%9F%B3%E9%87%8F%E5%87%8F%E5%B0%8F%E7%81%B0-01.png"></image></button>
+	<button bindtap="onVolumeUp" class="volume volumeUp"><image style="width:70rpx;height:70rpx;" src="http://qehhe97e4.bkt.clouddn.com/%E9%9F%B3%E9%87%8F%E5%8A%A0%E5%A4%A7%E7%81%B0-01.png"></image></button>
+</view>
+
+<view class="function" >
+	<view class="functionCard" bindtap="onBootButton">
+		<image style="width:80rpx;height:80rpx;" src="http://qehhe97e4.bkt.clouddn.com/%E5%BC%80%E6%9C%BA-01.png"> </image>
+		<view>开机</view>
+	</view>
+	<view class="functionCard" bindtap="onMenuButton">
+		<image style="width:80rpx;height:80rpx;" src="http://qehhe97e4.bkt.clouddn.com/%E8%8F%9C%E5%8D%95-01.png"> </image>
+		<view>菜单</view>
+	</view>
+	<view class="functionCard" bindtap="onBackButton">
+		<image style="width:80rpx;height:80rpx;" src="http://qehhe97e4.bkt.clouddn.com/%E4%B8%8A%E4%B8%80%E7%BA%A7-01.png"> </image>
+		<view>上一级</view>
+	</view>
+</view>

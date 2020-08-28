@@ -1,0 +1,25 @@
+<view class="header">
+				<image style="width:300rpx;height:300rpx;margin:0 auto;" src="../../images/icon/deng.png" />
+</view>
+<view class="container">
+				<text class="LED">LED</text>
+				<text class="mode">模式</text>
+				<view class="switch">
+								<van-switch checked="{{ !!lampList[nowLamp].state}}" size="40rpx" catchtap="modeChange" active-color="rgb(235, 182, 130)" inactive-color="rgb(224, 224, 224)" />
+				</view>
+</view>
+<view class="progress" catchtap="buttonChange">
+				<button id="buttonMinus">-</button>
+				<view class="progressBody">
+								<van-progress percentage="{{lampList[nowLamp].state}}" color="#ecb783" stroke-width="15rpx" />
+				</view>
+				<button id="buttonPlus">+</button>
+</view>
+<view class="tarbar">
+				<view wx:for="{{lampList}}" wx:key="name" class="tarbarCard" catchtap="tarbarChange" data-index="{{index}}">
+								<view>
+												<image style="width:100rpx;height:100rpx;" src="{{index === nowLamp ? item.img2:item.img1}}" />
+												<view class="{{index === nowLamp ?'now':''}}">{{item.name}}</view>
+								</view>
+				</view>
+</view>

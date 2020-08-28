@@ -1,0 +1,97 @@
+/* pages/tv/tv.wxss */
+page{
+	background:rgb(255,255,255);
+}
+.container{
+	width:100vw;
+	height:60vh;
+	margin:0 auto;
+	background:rgb(255,255,255);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:rgb(255,255,255);
+}
+.background{
+	margin:0 auto;
+	width:100vw;
+	height:60vh;
+	background:url("http://qehhe97e4.bkt.clouddn.com/%E9%81%A5%E6%8E%A7%E5%99%A8%E5%A4%A7-01.png");
+	/* background:url("../../images/icon/tv.png"); */
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content:  space-evenly;
+	
+}
+.shang{
+	flex:1;	
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.zhong{
+	flex:1;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.ok{
+	font-size: larger;
+	
+}
+.xia{
+	flex:1;	
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.zuo{
+	width:100rpx;
+	height:30rpx;
+	
+}
+.you{
+	width: 100rpx;
+	height:30rpx;
+}
+
+.button{
+	width:60vw;
+	margin:0 auto;
+	height:100rpx;
+	display: flex;
+	justify-content: space-between;
+}
+.volume{
+	flex-basis: 48%;
+	text-align: center;
+	margin:0 auto;
+}
+.volumeDown{
+	border-right: solid 20rpx rgb(248, 248, 248);
+	border-radius: 80rpx 20rpx 20rpx 80rpx;
+}
+
+.volumeUp{
+	border-left: solid 20rpx rgb(248, 248, 248);
+	border-radius: 20rpx 80rpx 80rpx 20rpx;
+}
+
+.function{
+
+	margin:0 auto;
+	margin-top:100rpx;
+	display: flex;
+	width:80vw;
+	align-items: center;
+	text-align: center;
+}
+.functionCard{
+	flex:1;
+}

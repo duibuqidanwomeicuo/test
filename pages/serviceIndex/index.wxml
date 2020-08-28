@@ -1,0 +1,58 @@
+<!--pages/serviceIndex/index.wxml-->
+<view class="header">
+  <view>
+    <view>
+      <text class="date">{{header.date}}</text>
+    </view>
+    <view style="margin-bottom:30rpx;">
+      <text class="day">{{header.day}}</text>
+    </view>
+    <van-row gutter="20">
+      <van-col span="6">
+        <view class="font-value">26.6</view>
+        <view class="font-mini">室内温度</view>
+      </van-col>
+      <van-col span="6">
+        <view class="font-value">30.0%</view>
+        <view class="font-mini">空气湿度</view>
+      </van-col>
+      <van-col span="6">
+        <view class="font-value">46</view>
+        <view class="font-mini">空气质量</view>
+      </van-col>
+    </van-row>
+  </view>
+ <view class="imageContainer">
+    <image src="../../images/icon/sun.png" class="imageClass"></image>
+  </view> 
+</view>
+<view class="">
+<image src="../../images/icon/qunalvxingpng.png" class="img"></image>
+</view>
+<view class="intelligent">
+  <text class="title">服务</text>
+  <text class="desc">SERVICE</text>
+</view>
+<view class="imgfloat">
+  <image src="../../images/防疫指南-01.png" class="imgfloattype"></image>
+  <view class="textview">
+   防疫指南
+  </view> 
+</view>
+  
+
+<view>
+  <van-row class="cardContainer">
+    <block wx:for="{{intelligent}}" wx:key="name">
+      <van-col span="12">
+      <view class="but" size="mini" open-type="getUserInfo">
+        <view class="intelligentCard" data-item="{{item}}" bindtap="intelligentButton">
+          <image style="width:90rpx;height:90rpx;margin-bottom:10rpx;" src="{{item.img1}}" />
+          <view class="intelligentName" style="margin-bottom:10rpx;">{{item.name}}</view>
+        </view>
+      </view>
+      </van-col>
+    </block>
+ 
+  </van-row>
+</view>

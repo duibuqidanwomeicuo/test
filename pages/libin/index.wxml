@@ -1,0 +1,7 @@
+<!--pages/libin/index.wxml-->
+<block wx:for="{{list}}" wx:key="name" wx:for-index="i">
+ <view class="buttype" data-item="{{item}}" bindtap="listselect">
+ <view>{{item.name}}</view>
+ <image src="{{item.image}}" class="imgtype"></image>
+ </view>
+ </block>

@@ -1,0 +1,63 @@
+{
+	"pages": [
+		"pages/serviceIndex/index",
+		"pages/xuzhu/index",
+		"pages/login/index",
+		"pages/airConditioner/index",
+
+		"pages/lamplight/index",
+		"pages/index/index",
+		"pages/tv/index",
+		"pages/curtain/index",
+
+
+		"pages/evaluate/index",
+		"pages/libin/index",
+		"pages/dasao/index",
+
+		"pages/songwu/index",
+		"pages/songwu/yiliao/index",
+		"pages/songwu/shenghuo/index",
+		"pages/songwu/nvshi/index",
+		"pages/songwu/ertong/index",
+		"pages/songwu/nanshi/index",
+		"pages/songwu/xiyi/index",
+		
+		"pages/wenxun/index",
+
+
+		"pages/myIndex/index"
+	],
+	"window": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "枫渡欢迎您入住!",
+		"navigationBarTextStyle": "black"
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"color": "#A3a3a3",
+		"selectedColor": "#163070",
+		"backgroundColor": "white",
+		"list": [{
+				"selectedIconPath": "images/icon/you-zhienng.png",
+				"iconPath": "images/icon/wu-zhineng.png",
+				"pagePath": "pages/index/index",
+				"text": "智能"
+			},
+			{
+				"selectedIconPath": "images/icon/you-fuwu.png",
+				"iconPath": "images/icon/wu-fuwu.png",
+				"pagePath": "pages/serviceIndex/index",
+				"text": "服务"
+			},
+			{
+				"selectedIconPath": "images/icon/you-wode.png",
+				"iconPath": "images/icon/wu-wode.png",
+				"pagePath": "pages/myIndex/index",
+				"text": "我的"
+			}
+		]
+	}
+}

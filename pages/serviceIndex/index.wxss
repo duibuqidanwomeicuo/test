@@ -1,0 +1,127 @@
+/* pages/serviceIndex/index.wxss */
+.header{
+  width: 750rpx;
+  background-color: rgb(255, 255, 255);
+  height:230rpx;
+  padding-left:40rpx;
+  padding-bottom: 10px;
+}
+.imageContainer{
+  position: absolute;
+  right:20rpx;
+  top:20rpx;
+}
+.imageClass{
+  width:150rpx;
+  height: 150rpx;
+}
+.circumstances{
+  margin:20rpx;
+}
+
+.cardContainer{
+  margin:0 auto;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.circumstancesCard{
+  padding:20rpx 10rpx;
+  width:130rpx;
+  height:130rpx;
+  background-color: rgb(255, 255, 255);  
+  border-radius: 10%;
+}
+.circumstancesCardChoosed{
+  padding:20rpx 10rpx;
+  width:130rpx;
+  height:130rpx;
+  background-color:rgb(22, 48, 112);
+  border-radius: 10%;
+  color:rgb(219, 172, 129);
+
+}
+.intelligent{
+  margin:20rpx;
+}
+.intelligentCard{
+  margin:0;
+  padding: 40rpx 10rpx;
+  width: 300rpx;
+  height:150rpx;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 15rpx;
+  margin-top: 15rpx;
+  border-radius: 5%;
+}
+
+
+.font-mini{
+  font-family:PingFangSC-Regular;
+  font-size: 10px;
+  font-weight: bold;
+  color:rgb(208, 209, 209);
+}
+.textview{
+  font-size: x-small;
+  padding-top: 25px;
+  margin-left: 20px;
+}
+.imgfloat{
+  position: fixed;
+  float: right;
+  right: 0;
+  top: 240px;
+  width: 70px;
+  height: 40px;
+  background-color: white;
+  border-top-left-radius: 20px;/*设置左边边框为圆角*/
+  border-bottom-left-radius: 20px;
+  box-shadow: -1px 2px 1px 0px rgb(182, 181, 181);
+}
+.imgfloattype{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  margin-left: 25px;
+}
+.font-value{
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  font-weight: bold;
+}
+.day{
+  font-family: PingFangSC-Regular;
+  font-size:24px ;
+  font-weight: bold;
+}
+
+.date{
+  font-family: PingFangSC-Regular;
+  font-size:14px;
+  color:rgb(208, 209, 209);
+}
+
+
+.title{
+  display:inline-block;
+  font-size: 16px;
+  margin-right:30rpx;
+}
+.desc{
+  font-size: 14px;
+  color:#777777;
+}
+
+.intelligentName{
+  font-size: 14px;
+}
+.intelligentDesc{
+  font-size: 12px;
+  color:#777777;
+}
+.img{
+padding: 8px;
+  width: 95%;
+  height: 120px;
+}

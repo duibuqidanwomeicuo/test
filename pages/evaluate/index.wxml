@@ -1,0 +1,19 @@
+<!--pages/evaluate/index.wxml-->
+<block wx:for="{{list}}" wx:for-index="index1" wx:key="index">
+<view class="box">
+<view class="itemtype">{{item}}</view>
+<view>
+<block wx:for="{{stars}}" wx:key="index">
+<image class="star-image" 
+src="{{scores[index1] > item ?select : noselect}}" 
+data-score="{{item+1}}" data-index1="{{index1}}" bindtap="selected">
+</image>
+</block>
+</view>
+</view>
+</block>
+<view class="sbmit">
+<button class="submit_button" 
+bindtap="submit_evaluate">确定</button>    
+</view>
+  

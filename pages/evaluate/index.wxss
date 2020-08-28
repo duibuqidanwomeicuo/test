@@ -1,0 +1,25 @@
+.box{
+  margin-bottom: 10px;
+  background-color: white;
+  text-align: center;
+}
+.itemtype{
+  align-content: center;
+  padding-bottom: 10px;
+}
+.star-image{
+  height: 24px;
+  width: 24px;
+  margin: 10px;
+}
+.sbmit{
+  position: fixed;
+  bottom: 0;
+  background-color: #163070;
+  width: 100%;
+}
+.submit_button{
+  background-color: #163070;
+  width: 100%;
+  color:#EBB682;
+}

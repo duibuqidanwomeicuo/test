@@ -1,0 +1,7 @@
+<!--pages/songwu/index.wxml-->
+ <block wx:for="{{itemdata}}" wx:key="name">
+ <view class="buttype" data-item="{{item}}" bindtap="itembutton">
+ <view class="itemtype">{{item.name}}</view>
+ <image src="../../images/更多-01.png" class="imgtype"></image>
+ </view>
+ </block>

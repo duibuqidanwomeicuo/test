@@ -1,0 +1,10 @@
+<!--pages/songwu/yiliao/index.wxml-->
+ <block wx:for="{{money}}" wx:key="name" wx:for-index="i">
+ <view class="buttype" data-item="{{item}}" bindtap="itembutton">
+ <view>{{item.name}}</view>
+ <view>￥{{item.number}}</view>
+ <image src="{{item.image}}" class="imgtype"></image>
+ </view>
+ </block>
+ <view>合计：{{numdata}}</view>
+ <view>立即支付</view>

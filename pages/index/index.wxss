@@ -1,0 +1,96 @@
+.header{
+  width: 750rpx;
+  background-color: rgb(255, 255, 255);
+  height:230rpx;
+  padding-left:40rpx;
+}
+.imageContainer{
+  position: absolute;
+  right:20rpx;
+  top:20rpx;
+}
+.imageClass{
+  width:150rpx;
+  height: 150rpx;
+}
+.circumstances{
+  margin:20rpx;
+}
+
+.cardContainer{
+  margin:0 auto;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.circumstancesCard{
+  padding:20rpx 10rpx;
+  width:130rpx;
+  height:130rpx;
+  background-color: rgb(255, 255, 255);  
+  border-radius: 10%;
+}
+.circumstancesCardChoosed{
+  padding:20rpx 10rpx;
+  width:130rpx;
+  height:130rpx;
+  background-color:rgb(22, 48, 112);
+  border-radius: 10%;
+  color:rgb(219, 172, 129);
+
+}
+.intelligent{
+  margin:20rpx;
+}
+.intelligentCard{
+  margin:0;
+  padding: 40rpx 10rpx;
+  width: 300rpx;
+  height:260rpx;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 30rpx;
+  border-radius: 5%;
+}
+
+
+.font-mini{
+  font-family:PingFangSC-Regular;
+  font-size: 10px;
+  font-weight: bold;
+  color:rgb(208, 209, 209);
+}
+.font-value{
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  font-weight: bold;
+}
+.day{
+  font-family: PingFangSC-Regular;
+  font-size:24px ;
+  font-weight: bold;
+}
+
+.date{
+  font-family: PingFangSC-Regular;
+  font-size:14px;
+  color:rgb(208, 209, 209);
+}
+
+
+.title{
+  display:inline-block;
+  font-size: 16px;
+  margin-right:30rpx;
+}
+.desc{
+  font-size: 14px;
+  color:#777777;
+}
+
+.intelligentName{
+  font-size: 14px;
+}
+.intelligentDesc{
+  font-size: 12px;
+  color:#777777;
+}

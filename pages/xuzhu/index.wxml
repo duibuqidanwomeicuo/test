@@ -1,0 +1,28 @@
+<!--pages/xuzhu/index.wxml-->
+<view class="buttype" bindtap="xuzhulist">
+<view>续住</view>
+<image src="{{image1}}" class="imgtype"></image>
+</view>
+<!-- 选中后要显示的列表 -->
+<view  wx:if="{{select1==true}}">
+ <block wx:for="{{xuzhulist}}" wx:key="name" wx:for-index="i">
+ <view class="selectbox" data-item="{{item}}" bindtap="xuzhuselect">
+ <view>{{item.name}}</view>
+ <image src="{{item.image}}" class="imgtype"></image>
+ 
+ </view>
+ </block>
+</view>
+<view class="buttype" bindtap="tflist">
+<view>退房</view>
+<image src="{{image2}}" class="imgtype"></image>
+</view>
+<!-- 选中后要显示的列表 -->
+<view wx:if="{{select2==true}}">
+ <block wx:for="{{tflist}}" wx:key="name" wx:for-index="i">
+ <view class="selectbox" data-item="{{item}}" bindtap="tfselect">
+ <view>{{item.name}}</view>
+ <image src="{{item.image}}" class="imgtype"></image>
+ </view>
+ </block>
+</view>

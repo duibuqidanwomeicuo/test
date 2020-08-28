@@ -1,0 +1,72 @@
+<!-- index.wxml -->
+<view class="header">
+  <view>
+    <view>
+      <text class="date">{{header.date}}</text>
+    </view>
+    <view style="margin-bottom:30rpx;">
+      <text class="day">{{header.day}}</text>
+    </view>
+    <van-row gutter="20">
+      <van-col span="6">
+        <view class="font-value">26.6</view>
+        <view class="font-mini">室内温度</view>
+      </van-col>
+      <van-col span="6">
+        <view class="font-value">30.0%</view>
+        <view class="font-mini">空气湿度</view>
+      </van-col>
+      <van-col span="6">
+        <view class="font-value">46</view>
+        <view class="font-mini">空气质量</view>
+      </van-col>
+    </van-row>
+  </view>
+  <view class="imageContainer">
+    <image src="../../images/icon/sun.png" class="imageClass"></image>
+  </view>
+</view>
+<view class="circumstances">
+  <text class="title">情景</text>
+  <text class="desc">CIRCUMSTANCES</text>
+</view>
+<view class="circumstances">
+  <van-row class="cardContainer">
+    <block wx:for="{{circumstances}}" wx:key="name">
+      <van-col span="6" data-item="{{item}}" bindtap="circumstancesButton" data-index="{{index}}">
+        <view class="circumstancesCard{{item.state===0?'':'Choosed'}}">
+          <image style="width:70rpx;height:70rpx;" src="{{item.state===0?item.img1:item.img2}}" />
+          <view>{{item.name}}</view>
+        </view>
+      </van-col>
+    </block>
+  </van-row>
+</view>
+<view class="intelligent">
+  <text class="title">智能</text>
+  <text class="desc">INTELGENT</text>
+</view>
+<view>
+  <van-row class="cardContainer">
+    <block wx:for="{{intelligent}}" wx:key="name">
+      <van-col span="12">
+        <view class="intelligentCard" data-item="{{item}}" bindtap="intelligentButton">
+          <image style="width:90rpx;height:90rpx;margin-bottom:10rpx;" src="{{item.img1}}" />
+          <view class="intelligentName" style="margin-bottom:10rpx;">{{item.name}}</view>
+          <view class="intelligentDesc" style="margin-bottom:10rpx;">{{item.desc}}</view>
+          <view style="width:100rpx;height:100rpx;margin:0 auto;">
+            <van-switch checked="{{item.state}}" size="40rpx" catchtap="intelligentChange" data-index="{{index}}" active-color="rgb(235, 182, 130)" inactive-color="rgb(224, 224, 224)" />
+          </view>
+        </view>
+      </van-col>
+    </block>
+    <van-col span="12">
+      <view class="intelligentCard">
+        <image style="width:90rpx;height:90rpx;" src="../../images/icon/gengduo.png" />
+        <view class="intelligentName">更多</view>
+        <view class="intelligentDesc">敬请期待</view>
+        <image style="width:80rpx;height:80rpx;" src="../../images/icon/fengdu.png" />
+      </view>
+    </van-col>
+  </van-row>
+</view>

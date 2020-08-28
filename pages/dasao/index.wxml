@@ -1,0 +1,32 @@
+<!--pages/dasao/index.wxml-->
+<view class="buttype" bindtap="dasaolist">
+<view>打扫房间</view>
+<image src="{{image1}}" class="imgtype"></image>
+</view>
+<!-- 选中后要显示的打扫列表 -->
+<view  wx:if="{{select1==true}}">
+ <block wx:for="{{dasao}}" wx:key="name" wx:for-index="i">
+ <view class="selectbox" data-item="{{item}}" bindtap="dasaoselect">
+ <view>{{item.name}}</view>
+ <image src="{{item.image}}" class="imgtype"></image>
+ <!-- <picker mode="time" wx:if="{{select3==true}}" bindchange="bindtimeChange"
+  value="{{time}}" start="00:00" end="23:59">
+ <view>当前选择：{{time}}</view>
+ </picker> -->
+ 
+ </view>
+ </block>
+</view>
+<view class="buttype" bindtap="weixiulist">
+<view>维修服务</view>
+<image src="{{image2}}" class="imgtype"></image>
+</view>
+<!-- 选中后要显示的维修列表 -->
+<view wx:if="{{select2==true}}">
+ <block wx:for="{{weixiu}}" wx:key="name" wx:for-index="i">
+ <view class="selectbox" data-item="{{item}}" bindtap="weixiuselect">
+ <view>{{item.name}}</view>
+ <image src="{{item.image}}" class="imgtype"></image>
+ </view>
+ </block>
+</view>

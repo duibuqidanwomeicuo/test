@@ -1,0 +1,68 @@
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100rpx;
+  height: 400rpx;
+}
+
+.container{
+  text-align: center;
+}
+.LED{
+  font-size: 40px;
+  display:block;
+  margin-bottom: 10rpx;
+}
+.mode{
+  display: block;
+  font-size: 14px;
+}
+.switch{
+  margin:20rpx auto;
+}
+.progress{
+  margin:50rpx 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  flex:1;
+  display: inline-block;
+  width:50rpx !important;
+  margin:0;
+  /* font-size:40rpx; */
+}
+#button2{
+  width:50rpx !important;
+  /* width:50rpx ; */
+  margin:0;
+  /* font-size:40rpx; */
+}
+#button1{
+    width:50rpx !important;
+    margin:0;
+    /* font-size:40rpx; */
+}
+.progressBody{
+  flex:8;
+}
+.tarbar{
+  width:700rpx;
+  display: flex;
+  margin:0 auto;
+  margin-top:100rpx;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.tarbarCard{
+  flex:1;
+  color:#A3A3A3;
+  font-size:28rpx;
+}
+.now{
+  color:#163070;
+}

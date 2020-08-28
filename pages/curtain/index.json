@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-switch": "../../dist/switch/index",
+    "van-progress": "../../dist/progress/index",
+    "van-row": "../../dist/row/index",
+    "van-col": "../../dist/col/index"
+  }
+}
