@@ -13,9 +13,21 @@
   value="{{time}}" start="00:00" end="23:59">
  <view>当前选择：{{time}}</view>
  </picker> -->
+<!-- <datetime wx:if="{{select3==true}}" bindMultiPickerChange="bindMultiPickerChange" 
+ bindCancel="bindCancel"></datetime> -->
  
  </view>
  </block>
+   <van-datetime-picker wx:if="{{select3==true}}"
+   mode="multiSelector"
+  type="datetime"
+  value="{{ currentDate }}"
+  min-date="{{ minDate }}"
+  max-date="{{ maxDate }}"
+  bind:input="onInput"
+/>
+   
+  
 </view>
 <view class="buttype" bindtap="weixiulist">
 <view>维修服务</view>

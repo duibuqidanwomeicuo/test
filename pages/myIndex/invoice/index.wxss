@@ -1,0 +1,20 @@
+/* pages/myIndex/invoice/index.wxss */
+.bindinput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    height: 60px;
+    background-color: white;
+}
+.invoicetype{
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+}
+.imgtype{
+    width: 16px;
+    height: 16px;
+}

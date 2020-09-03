@@ -1,7 +1,6 @@
 {
 	"pages": [
-		"pages/serviceIndex/index",
-		"pages/xuzhu/index",
+
 		"pages/login/index",
 		"pages/airConditioner/index",
 
@@ -23,10 +22,18 @@
 		"pages/songwu/nanshi/index",
 		"pages/songwu/xiyi/index",
 		
+		"pages/fy/index",
 		"pages/wenxun/index",
 
-
-		"pages/myIndex/index"
+		"pages/myIndex/index",
+		"pages/serviceIndex/index",
+		"pages/xuzhu/index",
+		"pages/myIndex/allserver/index",
+		"pages/myIndex/stayserver/index",
+		"pages/myIndex/servering/index",
+		"pages/myIndex/served/index",
+		"pages/myIndex/stayevaluation/index",
+		"pages/myIndex/invoice/index"
 	],
 	"window": {
 		"backgroundTextStyle": "dark",

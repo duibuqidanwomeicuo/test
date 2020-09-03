@@ -86,17 +86,8 @@ Page({
         })
         break;
       case "问询服务":
-        wx.getSetting({
-          success(res) {
-            if (!res.authSetting['scope.userinfo']) {
-              wx.authorize({
-                scope: 'scope.userinfo',
-                success () {
-                  // console.log("success")
-                }
-              })
-            }
-          }
+        wx.navigateTo({
+          url: '/pages/wenxun/index',
         })
         wx.setNavigationBarTitle({
           title: '问询服务'
@@ -208,5 +199,10 @@ Page({
     if (!this.timer) {
       this.timer = setInterval(this.updateScene, 5000);
     }
+  },
+  fy: function(){
+    wx.navigateTo({
+      url: '../fy/index',
+    })
   }
 })

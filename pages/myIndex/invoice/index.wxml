@@ -1,0 +1,20 @@
+<!--pages/myIndex/invoice/index.wxml-->
+<view>
+<text>发票抬头</text>
+<view class="invoicetype" bindtap="invoice">
+    <image class="imgtype" src="../../../images/加号.png"></image>
+    <view style="font-size: smaller">选择发票抬头</view>
+</view>
+<text>基本信息</text>
+<block>
+<view wx:for="{{inputlist}}" wx:key="index" data-item="{{item}}" class="bindinput">
+<view>{{item.name}}</view>
+<input class="weui-input"  
+maxlength="10" bindinput="bindKeyInput" 
+placeholder="{{item.node}}" placeholder-style="text-align:right;font-size:smaller"/>
+</view>
+</block>
+<view style="background-color: #163070;">
+    <button style="background-color: #163070; color: #EBB682;">确定</button>
+</view>
+</view>

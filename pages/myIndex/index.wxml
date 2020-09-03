@@ -1,2 +1,29 @@
 <!--pages/myIndex/index.wxml-->
-<text>pages/myIndex/index.wxml</text>
+<view class="user_info_wrap">
+<view class="user_info">
+<image class="user_icon" src="{{userinfo.avatarUrl}}" />
+<view class="user_name"></view>      
+</view>  
+ <!-- <navigator url="/pages/login/index">登录</navigator> -->
+</view>
+<block wx:for="{{servicelist}}" wx:key="name">
+<view class="servertype" data-item="{{item}}" bindtap="intelligentButton">
+<view class="server_text_type">{{item.name}}
+  <text style="color:{{item.numcolor}};">{{item.number}}</text>
+</view>
+<image src="../../images/更多-01.png" class="server_img_type"/>
+</view>
+</block>
+
+
+<view class="imgfloat" bindtap="fy">
+  <image src="../../images/防疫指南-01.png" class="imgfloattype"></image>
+  <view class="textview">
+   防疫指南
+  </view> 
+</view> 
+
+<view >
+<button class="btntype">退出登录</button>
+</view>
+  

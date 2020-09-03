@@ -33,7 +33,7 @@
   <text class="title">服务</text>
   <text class="desc">SERVICE</text>
 </view>
-<view class="imgfloat">
+<view class="imgfloat" bindtap="fy">
   <image src="../../images/防疫指南-01.png" class="imgfloattype"></image>
   <view class="textview">
    防疫指南

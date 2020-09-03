@@ -1,2 +1,16 @@
 <!--pages/wenxun/index.wxml-->
-<text>pages/wenxun/index.wxml</text>
+
+    <block wx:for="{{questionlist}}" wx:key="index">
+   <view class="viewtype">
+    <view class="questiontype">
+        <text style="color: black; font-size:large;">问：</text>
+        {{item.q_desc}}
+    </view>
+    <view class="questiontype">
+        <text style="color: black; font-size:10;">答：</text>
+        {{item.q_answer}}
+    </view>
+    </view>
+    </block>
+
+  

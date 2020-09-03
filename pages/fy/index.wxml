@@ -1,0 +1,15 @@
+<!--pages/fy/index.wxml-->
+<view class="head">
+<image mode="widthFix" class="ewm" src="../../images/健康码-01.png"></image>
+<navigator class="jkm"  url="https://www.runoob.com/linux/linux-command-manual.html">主动出示健康码</navigator>
+</view>
+<view class="body">
+<view class="wxts">枫渡温馨提示</view>
+<view class="pad">
+<view class="sz">为切实保障公众生命安全和身体健康，做好酒店客人的服务工作，现将有关事项告知如下:</view>
+</view>
+<block wx:for="{{textlist}}" wx:key="index">
+    <view class="sz">{{item.text}}</view>
+</block>
+</view>
+

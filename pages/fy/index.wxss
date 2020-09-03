@@ -1,0 +1,40 @@
+/* pages/fy/index.wxss */
+page{
+    background-color: aliceblue;
+  }
+  .head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 10px;
+  }
+  
+  .ewm{
+    width: 13px;
+    height: 13px;
+  }
+  .jkm{
+    font-size: 13px;
+    color: blue;
+    text-decoration: underline;/*下划线*/
+  }
+  .wxts{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+  }
+  .sz{
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .body{
+    margin-top: 10px;
+    background-color: white;
+  }
+  .pad{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  

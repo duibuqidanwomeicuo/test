@@ -6,7 +6,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     userInfo:{
       username:'',
-      password:''
+      password:'',
     }
   },
   onLoad: function () {
@@ -41,15 +41,16 @@ Page({
           TimeStamp: timestamp_str
         },
         success: (res) =>{
+          // console.log(res)
           this.setStorageHand(res);
         },
         fail: function (res) {
-          console.log(res);
+          // console.log(res);
         }
       })
     }
   },
-  login: function () {
+  login: function (e) {
     //点击登录
     //刷新token
     var util = require('../../utils/util.js');
@@ -60,6 +61,7 @@ Page({
     var sign = util.sha1('Thinker@123Action=WAPLOGINPassword=' + userInfo.password + 'TimeStamp=' + timestamp_str + 'UserId=' + userInfo.username + 'Thinker@123');
     // console.log(sign);
     wx.request({
+      
       url: 'https://smart.thinkercu.com/interface2.php', //仅为示例，并非真实的接口地址
       method: 'POST',
       header: {
@@ -73,12 +75,14 @@ Page({
         TimeStamp: timestamp_str
       },
       success: (res) => {
+        console.log(res);
         this.setStorageHand(res);
       },
       fail: function (res) {
         console.log(res);
       }
     })
+ 
   },
   accountInput: function (e) {
     this.data.userInfo.username = e.detail.value
@@ -99,6 +103,10 @@ Page({
       wx.setStorage({
         data: res.data.Data[0].hotelid,
         key: 'hotelId',
+      })
+      wx.setStorage({
+        data: res.data.Data,
+        key: 'userInfo',
       })
       wx.setStorage({
         data: res.data.Data[0].roomnum,

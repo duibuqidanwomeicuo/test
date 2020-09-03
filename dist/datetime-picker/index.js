@@ -246,6 +246,7 @@ VantComponent({
     },
     onConfirm() {
       this.$emit('confirm', this.data.innerValue);
+      console.log(this.data)
     },
     onChange() {
       const { data } = this;

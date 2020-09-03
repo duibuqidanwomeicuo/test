@@ -1,1 +1,46 @@
 /* pages/myIndex/index.wxss */
+.servertype{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 5px;
+    height: 50px;
+}
+.server_text_type{
+    font-size: 13px;
+
+}
+.servertype image{
+    width: 30px;
+    height: 30px;
+}
+.btntype{
+    color: #EBB682;
+    background-color: #163070;
+    font-size: 13px;
+    margin-top: 40px;
+}
+.imgfloat{
+    position: fixed;
+    float: right;
+    right: 0;
+    top: 240px;
+    width: 70px;
+    height: 40px;
+    background-color: white;
+    border-top-left-radius: 20px;/*设置左边边框为圆角*/
+    border-bottom-left-radius: 20px;
+    box-shadow: -1px 2px 1px 0px rgb(182, 181, 181);
+  }
+  .imgfloattype{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+  }
+  .textview{
+    font-size: x-small;
+    padding-top: 25px;
+    margin-left: 20px;
+  }

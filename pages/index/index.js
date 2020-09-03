@@ -223,21 +223,6 @@ Page({
         RoomId: userInfo.roomNum,
         DeviceType: 'SENCE',
         TimeStamp: timestamp_str
-      },
-      //箭头函数 this 指向上一级
-      success: (res) => {
-        // 开始更新 模式数据
-        // 返回数据 示例
-        //  {id: "SCENE.0008.9.03", control_id: "03", state: "1", name: "睡眠模式", type: "SCENE", …}
-        const data = res.data.Data;
-        const circumstances = this.data.circumstances;
-        for (let i = 0; i < data.length; i++) {
-          circumstances[i].state = data[i].state === "0" ? 0 : 1;
-          circumstances[i].id = data[i].id;
-        }
-        this.setData({
-          'circumstances': circumstances
-        })
       }
     });
   },

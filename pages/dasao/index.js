@@ -5,6 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    minHour: 10,
+    maxHour: 20,
+    minDate: new Date().getTime(),
+    maxDate: new Date(2100, 10, 1).getTime(),
+    currentDate: new Date().getTime(),
     dasao: [{
       id: 0,
       name: "立即服务",
@@ -94,6 +99,12 @@ Page({
           icon: "none",
           duration: 2000
         })
+        wx.request({
+          url: 'url',
+          data:{
+
+          }
+        })
         }else {
           this.setData({
             'dasao[0].image': ""
@@ -104,13 +115,14 @@ Page({
         if (data.image == ""){
           this.setData({
           'dasao[1].image': "../../images/选择金-01.png",
-          // 'select3': !this.data.select3
+          'select3': !this.data.select3
         })
+        
         
         }else {
           this.setData({
             'dasao[1].image': "",
-            // 'select3': !this.data.select3
+            'select3': !this.data.select3
           })
         }
         break;
@@ -190,42 +202,12 @@ Page({
             break;
         }
       },
-      submit: function() { // 实现评论功能，将发布的评论同步到云数据库
-        let value = this.data.inputValue;
-        let new_id = this.data.new_id;
-        let userInfo = this.data.userInfo
-        // let new_id = '6594157273642172936'
-        if(userInfo){
-          comments.where({
-            new_id: new_id
-          }).get({
-            success: (res) => {
-              // console.log(res)
-              let comms= res.data[0].comments;
-              let people = {
-                content: value,
-                like: 0,
-                avatar: userInfo.avatarUrl,
-                nickname: userInfo.nickname
-              }
-              comms.unshift(people);
-              // console.log(comm)
-              this.setData({
-                comms: comms,
-                input: '',
-              })
-              wx.cloud.callFunction({
-                name: 'updateComments',
-                data: {
-                  new_id: new_id,
-                  comms: comms
-                }
-              }).then(res =>{
-                console.log(res)
-              })
-      
-            }
-          })
-        }
-      }
+      onInput(event) {
+        this.setData({
+          currentDate: event.detail
+        });
+        console.log(event.detail)
+      },
+    
+    
 })

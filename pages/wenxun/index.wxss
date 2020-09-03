@@ -1,1 +1,9 @@
 /* pages/wenxun/index.wxss */
+.viewtype{
+    background-color: white;
+    margin-bottom: 10px;
+}
+.questiontype{
+    color: gray;
+    font-size: smaller;
+}

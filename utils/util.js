@@ -64,7 +64,12 @@ function sha1(s) {
   return hex;
 };
 
+function subTen(value) {
+  return  value<10? ('0'+value):value;
+}
+
 module.exports = {
   formatTime: formatTime,
-  sha1: sha1  //导出
+  sha1: sha1,  //导出
+  subTen: subTen
 }

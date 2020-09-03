@@ -1,36 +1,18 @@
-// pages/wenxun/index.js
+// pages/myIndex/servering/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    questionlist:[]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var hotelId = wx.getStorageSync('hotelId')
-    // 向服务器发起数据请求
-    wx.request({
-      url: 'https://www.xiaozhu.link/xiaozhu/serviceQuestion/getAllAnswer.do',
-      method: 'POST',
-      data: {
-        'hotelId': hotelId
-      },
-      header: {
-        'content-type': 'application/json'
-      },
-      success: (res)=>{
-        this.setData({
-          questionlist:res.data.data1
-        })
-        
-      }
-      
-    })
+
   },
 
   /**
